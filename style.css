@@ -131,16 +131,15 @@ header nav a:hover {
   margin-top: 5px;
 }
 
-/* Hero */
+/* Hero Section com Gradiente Limpo e Elegante */
 .hero-section {
   min-height: 85vh;
   display: flex;
   align-items: center;
   padding: 60px 5%;
-  background: 
-    linear-gradient(180deg, rgba(30, 46, 37, 0.85) 0%, rgba(23, 35, 28, 0.95) 100%),
-    url('1000348617.jpg') no-repeat center center / cover;
+  background: radial-gradient(circle at center, var(--bg-primary) 0%, var(--bg-secondary) 100%);
 }
+
 
 .tagline {
   color: var(--accent-orange);
