@@ -90,6 +90,205 @@ a[href*="trinks"]:hover {
   transform: translateY(-2px);
 }
 
+/* Hero Section (Início) com o Mapa no Fundo */
+main > section:first-child {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 5%;
+  /* Fundo com gradiente suave por cima do mapa da logo */
+  background: 
+    linear-gradient(180deg, rgba(30, 46, 37, 0.85) 0%, rgba(23, 35, 28, 0.92) 100%),
+    url('1000348617.jpg') no-repeat center center / cover;
+}
+
+/* Oculta o elemento com as letras N e H grandes */
+main > section:first-child > div:last-child {
+  display: none;
+}
+
+main > section:first-child h1 {
+  font-size: 3.5rem;
+  line-height: 1.15;
+  margin: 15px 0;
+  color: var(--text-primary);
+}
+
+main > section:first-child h1 span {
+  color: var(--accent-orange);
+}
+
+main > section:first-child p {
+  color: var(--text-secondary);
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+
+/* Seção de Serviços */
+section:nth-child(3) {
+  padding: 80px 5%;
+  background-color: var(--bg-secondary);
+}
+
+section:nth-child(3) > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+article {
+  background: var(--bg-card);
+  padding: 30px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-orange);
+}
+
+article h3 {
+  color: var(--text-primary);
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+article p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+article strong {
+  font-size: 1.5rem;
+  color: var(--accent-orange);
+  margin-top: 20px;
+  display: block;
+  font-family: 'Cinzel', serif;
+}
+
+/* Unidades (Botafogo / Leme) */
+section:nth-child(4) {
+  padding: 80px 5%;
+  background-color: var(--bg-primary);
+}
+
+section:nth-child(4) article span {
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  color: var(--accent-orange);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Banner de Frase/Cultura */
+section:nth-child(5) {
+  padding: 100px 5%;
+  background-color: var(--bg-secondary);
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+section:nth-child(5) p {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  color: var(--text-primary);
+}
+
+section:nth-child(5) p span {
+  color: var(--accent-orange);
+}
+
+/* Footer */
+footer {
+  padding: 40px 5%;
+  background-color: #101914;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  main > section:first-child h1 {
+    font-size: 2.4rem;
+  }
+  
+  section:nth-child(5) p {
+    font-size: 1.5rem;
+  }
+}
+
+
+color: inherit;
+  transition: all 0.3s ease;
+}
+
+/* Header & Navegação */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: rgba(23, 35, 28, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+header a[href="#inicio"] {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+}
+
+header nav a {
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+header nav a:hover {
+  color: var(--accent-orange);
+}
+
+/* Botões Principais (Agendar / CTA) */
+a[href*="trinks"] {
+  background-color: var(--accent-orange);
+  color: #FFF;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+a[href*="trinks"]:hover {
+  background-color: #C84925;
+  transform: translateY(-2px);
+}
+
 /* Hero Section (Início) */
 main > section:first-child {
   min-height: 85vh;
