@@ -132,13 +132,59 @@ header nav a:hover {
 }
 
 /* Hero Section com Gradiente Limpo e Elegante */
+/* Hero Section com o Mapa e Logo Estilizada */
 .hero-section {
-  min-height: 85vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 60px 5%;
-  background: radial-gradient(circle at center, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  text-align: center;
+  background: 
+    linear-gradient(180deg, rgba(30, 46, 37, 0.75) 0%, rgba(23, 35, 28, 0.90) 100%),
+    url('hero-bg.jpg') no-repeat center center / cover;
+  background-attachment: fixed; /* Efeito parallax super elegante */
 }
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tagline {
+  color: var(--accent-orange);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.hero-content h1 span {
+  color: var(--accent-orange);
+}
+
+.hero-description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 35px auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
 
 
 .tagline {
