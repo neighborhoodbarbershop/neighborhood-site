@@ -2,213 +2,111 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neighborhood Barbershop | Rio de Janeiro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1E2E25">
+  <meta name="description" content="Neighborhood Barbershop: cortes, barba e cuidado com o estilo em Botafogo e no Leme, Rio de Janeiro. Agende seu horário online.">
+  <title>Neighborhood Barbershop | Botafogo e Leme</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <a href="#inicio" class="logo-container">
-      <span class="brand-name">NEIGHBORHOOD</span>
-    </a>
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#galeria">Fotos</a>
-      <a href="#unidades">Unidades</a>
-      <a href="#avaliacoes">Avaliações</a>
-      <a href="https://www.instagram.com/neighborhood.barbershop/" target="_blank" rel="noopener" aria-label="Instagram">
-        <i class="fa-brands fa-instagram" style="font-size: 1.1rem; color: #E15A35;"></i>
-      </a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Neighborhood, início">NEIGHBORHOOD<span>BARBERSHOP • RIO DE JANEIRO</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#fotos">Fotos</a><a href="#unidades">Unidades</a><a href="#avaliacoes">Avaliações</a>
+      <a class="nav-book" href="#agendar">Agendar</a>
     </nav>
-    <a href="https://www.trinks.com/neighborhoodbarbershop" target="_blank" rel="noopener" class="btn-primary">Agendar</a>
   </header>
 
   <main>
-    <!-- Hero / Destaque Inicial -->
-    <section id="inicio" class="hero-section">
+    <section class="hero" id="inicio">
+      <div class="hero-shade"></div>
       <div class="hero-content">
-        <p class="tagline">BARBEARIA • ZONA SUL • RIO DE JANEIRO</p>
-        <h1>Seu estilo.<br><span>Sua vizinhança.</span></h1>
-        <p class="hero-description">Cultura não se corta, se compartilha. Um espaço feito para cuidar do visual, trocar ideia e se sentir em casa.</p>
-        <div class="hero-buttons">
-          <a href="https://www.trinks.com/neighborhoodbarbershop" target="_blank" rel="noopener" class="btn-primary btn-large">
-            <i class="fa-regular fa-calendar-check"></i> Agende seu horário
-          </a>
-          <a href="https://www.instagram.com/neighborhood.barbershop/" target="_blank" rel="noopener" class="btn-secondary">
-            <i class="fa-brands fa-instagram"></i> Siga no Instagram
-          </a>
+        <p class="eyebrow">BARBEARIA • ZONA SUL • RIO DE JANEIRO</p>
+        <h1>Seu estilo.<br><em>Sua vizinhança.</em></h1>
+        <p class="hero-copy">Um espaço feito para cuidar do visual, trocar ideia e se sentir em casa.</p>
+        <p class="motto">Cultura não se corta, se compartilha.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#agendar">Escolha sua unidade e agende</a>
+          <a class="button button-outline" href="https://www.instagram.com/neighborhood.barbershop/" target="_blank" rel="noopener">Siga no Instagram ↗</a>
         </div>
       </div>
+      <div class="hero-mark">N<span>.</span></div>
     </section>
 
-    <!-- Serviços e Preços -->
-    <section id="servicos" class="section-padding bg-alt">
-      <div class="section-header">
-        <p class="sub-title">SERVIÇOS</p>
-        <h2>Escolha seu estilo</h2>
+    <section class="section services" id="servicos">
+      <div class="section-heading"><p class="eyebrow">CUIDADO NO DETALHE</p><h2>Escolha seu <em>estilo</em></h2><p>Os mesmos serviços e valores nas duas unidades.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-top"><h3>Corte</h3><span>R$ 65</span></div><p>Do clássico ao atual, com acabamento impecável.</p></article>
+        <article class="service-card"><div class="service-top"><h3>Barba</h3><span>R$ 50</span></div><p>Modelagem e alinhamento para valorizar seu estilo.</p></article>
+        <article class="service-card featured"><div class="popular">MAIS PEDIDO</div><div class="service-top"><h3>Combo Neighborhood</h3><span>R$ 110</span></div><p>Corte + barba. A experiência completa.</p></article>
+        <article class="service-card"><div class="service-top"><h3>Acabamento</h3><span>R$ 25</span></div><p>Pezinho, contorno e detalhes que fazem a diferença.</p></article>
+        <article class="service-card"><div class="service-top"><h3>Sobrancelha</h3><span>R$ 20</span></div><p>Alinhamento para complementar o visual.</p></article>
+        <article class="service-card"><div class="service-top"><h3>Corte feminino</h3><span>R$ 90</span></div><p>Estilo, cuidado e corte sob medida.</p></article>
       </div>
-      <div class="services-grid">
-        <article class="service-card">
-          <div class="card-header">
-            <h3>Corte</h3>
-            <span class="price">R$ 65</span>
-          </div>
-          <p>Do clássico ao atual, com acabamento impecável.</p>
-        </article>
-        <article class="service-card">
-          <div class="card-header">
-            <h3>Barba</h3>
-            <span class="price">R$ 50</span>
-          </div>
-          <p>Modelagem, toalha quente e alinhamento com navalha.</p>
-        </article>
-        <article class="service-card featured">
-          <div class="badge">Mais Pedido</div>
-          <div class="card-header">
-            <h3>Combo Neighborhood</h3>
-            <span class="price">R$ 110</span>
-          </div>
-          <p>Corte + Barba completa. A experiência completa.</p>
-        </article>
-        <article class="service-card">
-          <div class="card-header">
-            <h3>Acabamento</h3>
-            <span class="price">R$ 25</span>
-          </div>
-          <p>Pezinho, contorno e detalhes que fazem a diferença.</p>
-        </article>
-        <article class="service-card">
-          <div class="card-header">
-            <h3>Sobrancelha</h3>
-            <span class="price">R$ 20</span>
-          </div>
-          <p>Design e alinhamento para complementar o visual.</p>
-        </article>
-        <article class="service-card">
-          <div class="card-header">
-            <h3>Corte Feminino</h3>
-            <span class="price">R$ 90</span>
-          </div>
-          <p>Estilo, cuidado e corte sob medida.</p>
-        </article>
-      </div>
-      <div class="center-action">
-        <a href="https://www.trinks.com/neighborhoodbarbershop" target="_blank" rel="noopener" class="btn-primary">
-          Agendar Serviço no Trinks →
-        </a>
-      </div>
+      <div class="center-action"><a class="text-link" href="#agendar">Agende seu serviço →</a></div>
     </section>
 
-    <!-- Galeria de Fotos da Barbearia -->
-    <section id="galeria" class="section-padding">
-      <div class="section-header">
-        <p class="sub-title">EXPERIÊNCIA</p>
-        <h2>Nosso Espaço</h2>
-      </div>
+    <section class="section gallery-section" id="fotos">
+      <div class="section-heading"><p class="eyebrow">POR DENTRO DA NEIGHBORHOOD</p><h2>Nosso <em>espaço</em></h2><p>Ambiente, equipe e cuidado em cada detalhe.</p></div>
       <div class="gallery-grid">
-        <div class="gallery-item"><img src="20260716_181132.jpg" alt="Neighborhood Barbershop"></div>
-        <div class="gallery-item"><img src="20260716_181250.jpg" alt="Atendimento na Barbershop"></div>
-        <div class="gallery-item"><img src="20260717_164417.jpg" alt="Detalhes do espaço"></div>
-        <div class="gallery-item"><img src="20260724_140115.jpg" alt="Corte e Estilo"></div>
-        <div class="gallery-item"><img src="20260903_183601.jpg" alt="Espaço Neighborhood"></div>
-        <div class="gallery-item"><img src="20260904_124037.jpg" alt="Ambiente"></div>
+        <figure class="gallery-item gallery-large"><img src="https://neighborhoodbarbershop.github.io/neighborhood-site/20260716_181132.jpg" alt="Atendimento e ambiente da Neighborhood Barbershop" loading="lazy"><figcaption>Atendimento</figcaption></figure>
+        <figure class="gallery-item"><img src="https://neighborhoodbarbershop.github.io/neighborhood-site/20260724_140115.jpg" alt="Barbeiro realizando um atendimento" loading="lazy"><figcaption>Precisão no detalhe</figcaption></figure>
+        <figure class="gallery-item"><img src="https://neighborhoodbarbershop.github.io/neighborhood-site/20260903_183601.jpg" alt="Equipe em atendimento na barbearia" loading="lazy"><figcaption>Nosso time</figcaption></figure>
+        <figure class="gallery-item"><img src="https://neighborhoodbarbershop.github.io/neighborhood-site/20260904_124037.jpg" alt="Experiência de cuidado na cadeira" loading="lazy"><figcaption>A experiência</figcaption></figure>
       </div>
+      <p class="gallery-note">Fotos atuais do site. Para destacar visualmente cada unidade, substitua ou complemente esta galeria com as fotos específicas de Botafogo e do Leme.</p>
     </section>
 
-    <!-- Unidades -->
-    <section id="unidades" class="section-padding bg-alt">
-      <div class="section-header">
-        <p class="sub-title">ONDE ESTAMOS</p>
-        <h2>Duas vizinhanças. Uma identidade.</h2>
-      </div>
-      <div class="locations-grid">
-        <article class="location-card">
-          <span class="location-num">01</span>
-          <h3>Botafogo</h3>
-          <p class="address"><i class="fa-solid fa-location-dot"></i> Rua Lauro Müller, 16 — Loja K</p>
-          <div class="hours">
-            <h4><i class="fa-regular fa-clock"></i> Horário de Funcionamento:</h4>
-            <p>Seg – Sex: 09h às 22h</p>
-            <p>Sábado: 10h às 20h</p>
-            <p>Feriados: 10h às 18h</p>
-          </div>
-          <a href="https://maps.google.com/?q=Rua+Lauro+Muller+16+Botafogo+Rio+de+Janeiro" target="_blank" rel="noopener" class="btn-location">
-            Como Chegar <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
+    <section class="section units-section" id="unidades">
+      <div class="section-heading"><p class="eyebrow">PERTINHO DE VOCÊ</p><h2>Duas vizinhanças.<br><em>Uma identidade.</em></h2></div>
+      <div class="unit-grid">
+        <article class="unit-card">
+          <div class="unit-number">01 / BOTAFOGO</div><h3>Neighborhood Botafogo</h3>
+          <p class="address">Rua Lauro Müller, 16 — Loja K<br>Botafogo, Rio de Janeiro</p>
+          <div class="hours"><span>Segunda a sexta</span><strong>09h às 22h</strong><span>Sábado</span><strong>10h às 20h</strong><span>Feriados</span><strong>10h às 18h</strong></div>
+          <div class="unit-actions"><a class="button button-outline" href="https://www.google.com/maps/search/?api=1&query=Rua+Lauro+Muller+16+Loja+K+Botafogo+Rio+de+Janeiro" target="_blank" rel="noopener">Como chegar ↗</a><a class="button button-primary booking-link" data-unit="botafogo" href="https://www.trinks.com/neighborhoodbarbershop" target="_blank" rel="noopener">Agendar Botafogo</a></div>
         </article>
-
-        <article class="location-card">
-          <span class="location-num">02</span>
-          <h3>Leme</h3>
-          <p class="address"><i class="fa-solid fa-location-dot"></i> Rua Gustavo Sampaio, 323</p>
-          <div class="hours">
-            <h4><i class="fa-regular fa-clock"></i> Horário de Funcionamento:</h4>
-            <p>Consulte disponibilidade e horários no agendamento.</p>
-          </div>
-          <a href="https://maps.google.com/?q=Rua+Gustavo+Sampaio+323+Leme+Rio+de+Janeiro" target="_blank" rel="noopener" class="btn-location">
-            Como Chegar <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
+        <article class="unit-card unit-leme">
+          <div class="unit-number">02 / LEME</div><h3>Neighborhood Leme</h3>
+          <p class="address">Rua Gustavo Sampaio, 323<br>Leme, Rio de Janeiro</p>
+          <div class="hours"><span>Horários</span><strong>Consulte no agendamento</strong><span>Serviços</span><strong>Mesmos valores</strong></div>
+          <div class="unit-actions"><a class="button button-outline" href="https://www.google.com/maps/search/?api=1&query=Rua+Gustavo+Sampaio+323+Leme+Rio+de+Janeiro" target="_blank" rel="noopener">Como chegar ↗</a><a class="button button-primary booking-link" data-unit="leme" href="https://www.trinks.com/neighborhood-barbershop-leme" target="_blank" rel="noopener">Agendar Leme</a></div>
         </article>
       </div>
     </section>
 
-    <!-- Avaliações -->
-    <section id="avaliacoes" class="section-padding">
-      <div class="section-header">
-        <p class="sub-title">DEPOIMENTOS</p>
-        <h2>O que diz a vizinhança</h2>
-        <div class="google-rating">
-          <span class="stars">★★★★★</span>
-          <p><strong>4.9/5.0</strong> no Google Reviews</p>
+    <section class="section booking-section" id="agendar">
+      <div class="booking-panel">
+        <p class="eyebrow">SEU PRÓXIMO CORTE COMEÇA AQUI</p><h2>Onde vamos<br><em>te encontrar?</em></h2>
+        <p>Escolha a unidade para continuar seu agendamento online pelo Trinks.</p>
+        <div class="booking-options">
+          <a class="booking-option booking-link" data-unit="botafogo" href="https://www.trinks.com/neighborhoodbarbershop" target="_blank" rel="noopener"><span class="option-number">01</span><span><strong>Botafogo</strong><small>Rua Lauro Müller, 16 — Loja K</small></span><b>→</b></a>
+          <a class="booking-option booking-link" data-unit="leme" href="https://www.trinks.com/neighborhood-barbershop-leme" target="_blank" rel="noopener"><span class="option-number">02</span><span><strong>Leme</strong><small>Rua Gustavo Sampaio, 323</small></span><b>→</b></a>
         </div>
-      </div>
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>“Melhor atendimento e corte da Zona Sul. Ambiente super descontraído e profissionais excelentes.”</p>
-          <strong>— Gabriel M.</strong>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>“Faço a barba e o corte toda semana na unidade Botafogo. O serviço é impecável do início ao fim.”</p>
-          <strong>— Rodrigo S.</strong>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>“Espaço sensacional no Leme! Cerveja gelada, boa conversa e corte perfeito.”</p>
-          <strong>— Lucas T.</strong>
-        </div>
+        <p class="booking-note">O agendamento abre em uma nova página do Trinks.</p>
       </div>
     </section>
 
-    <!-- Frase da Marca -->
-    <section class="brand-quote">
-      <p>“Cultura não se corta,<br><span>se compartilha.</span>”</p>
+    <section class="section reviews-section" id="avaliacoes">
+      <div class="section-heading"><p class="eyebrow">QUEM É DA VIZINHANÇA SABE</p><h2>O que diz a <em>vizinhança</em></h2><p class="rating">★★★★★ <strong>4,9/5,0</strong> no Google Reviews</p></div>
+      <div class="review-grid">
+        <blockquote>“Melhor atendimento e corte da Zona Sul. Ambiente super descontraído e profissionais excelentes.”<cite>— Gabriel M.</cite></blockquote>
+        <blockquote>“Faço a barba e o corte toda semana na unidade Botafogo. O serviço é impecável do início ao fim.”<cite>— Rodrigo S.</cite></blockquote>
+        <blockquote>“Espaço sensacional no Leme! Boa conversa e corte perfeito.”<cite>— Lucas T.</cite></blockquote>
+      </div>
     </section>
   </main>
 
-  <!-- Botão Flutuante do WhatsApp -->
-  <a href="https://wa.me/5521965870911?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20na%20Neighborhood." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contato via WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
-  <!-- Rodapé -->
-  <footer>
-    <div class="footer-content">
-      <h3 class="footer-logo">NEIGHBORHOOD</h3>
-      <p>Neighborhood Barbershop • Rio de Janeiro</p>
-      <div style="margin: 15px 0;">
-        <a href="https://www.instagram.com/neighborhood.barbershop/" target="_blank" rel="noopener" style="color: #E15A35; font-size: 1.5rem; text-decoration: none;">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </div>
-      <p class="copyright">© Neighborhood Barbershop. Todos os direitos reservados.</p>
-    </div>
+  <footer class="site-footer">
+    <a class="brand" href="#inicio">NEIGHBORHOOD<span>BARBERSHOP • RIO DE JANEIRO</span></a>
+    <p class="footer-motto">“Cultura não se corta, se compartilha.”</p>
+    <div class="footer-links"><a href="https://www.instagram.com/neighborhood.barbershop/" target="_blank" rel="noopener">Instagram</a><a href="#unidades">Unidades</a><a href="#agendar">Agendamento online</a></div>
+    <small>© <span id="year"></span> Neighborhood Barbershop. Todos os direitos reservados.</small>
   </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
