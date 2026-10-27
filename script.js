@@ -1,5 +1,5 @@
 /*
-  NEIGHBORHOOD — Configuração de Links do Trinks, Menu e Traduções
+  NEIGHBORHOOD — Configuração de Links, Menu Mobile e Traduções
 */
 
 const BOOKING_URLS = {
@@ -16,19 +16,21 @@ document.querySelectorAll(".booking-link").forEach((link) => {
   }
 });
 
+// Controle correto do menu mobile
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
 if (menuToggle && mainNav) {
   menuToggle.addEventListener("click", () => {
     const isOpen = mainNav.classList.toggle("open");
     menuToggle.setAttribute("aria-expanded", String(isOpen));
-    menuToggle.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
   });
 
-  mainNav.querySelectorAll("a").forEach((item) => item.addEventListener("click", () => {
-    mainNav.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
-  }));
+  mainNav.querySelectorAll("a").forEach((item) => {
+    item.addEventListener("click", () => {
+      mainNav.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
 }
 
 const yearElement = document.getElementById("year");
@@ -69,15 +71,11 @@ const translations = {
     sobrancelhaDesc: "Alinhamento para complementar o visual.",
     femTitulo: "Corte feminino",
     femDesc: "Estilo, cuidado e corte sob medida.",
-    verMaisServicos: "Agende seu serviço →",
+    verMaisServicios: "Agende seu serviço →",
     fotosEyebrow: "— Por Dentro da Neighborhood —",
-    fotosTitle: "Nosso <em>espaço</em>",
-    fotosSub: "Ambiente, equipe e cuidado em cada detalhe.",
-    foto1: "Atendimento",
-    foto2: "Precisão no detalhe",
-    foto3: "Nosso time",
+    fotosTitle: "Nossos <em>espaços</em>",
+    fotosSub: "Ambiente, equipe e cuidado em cada detalhe nas unidades Botafogo e Leme.",
     foto4: "A experiência",
-    fotosNota: "Fotos atuais do site. Para destacar visualmente cada unidade, substitua ou complemente esta galeria com as fotos específicas de Botafogo e do Leme.",
     unidadesEyebrow: "— Pertinho de Você —",
     unidadesTitle: "Duas vizinhanças.<br><em>Uma identidade.</em>",
     segSexta: "Segunda a sexta",
@@ -85,10 +83,6 @@ const translations = {
     feriados: "Feriados",
     comoChegar: "Como chegar ↗",
     agendarBotafogo: "Agendar Botafogo",
-    horariosLeme: "Horários",
-    consulteLeme: "Consulte no agendamento",
-    servicosLeme: "Serviços",
-    mesmosValoresLeme: "Mesmos valores",
     agendarLeme: "Agendar Leme",
     bookingEyebrow: "— Seu Próximo Corte Começa Aqui —",
     bookingTitle: "Onde vamos<br><em>te encontrar?</em>",
@@ -129,15 +123,11 @@ const translations = {
     sobrancelhaDesc: "Alignment to complete your look.",
     femTitulo: "Women's Haircut",
     femDesc: "Style, care, and custom cut.",
-    verMaisServicos: "Book your service →",
+    verMaisServicios: "Book your service →",
     fotosEyebrow: "— Inside Neighborhood —",
-    fotosTitle: "Our <em>space</em>",
-    fotosSub: "Environment, team, and care in every detail.",
-    foto1: "Service",
-    foto2: "Precision in detail",
-    foto3: "Our team",
+    fotosTitle: "Our <em>spaces</em>",
+    fotosSub: "Atmosphere, team, and care in every detail at Botafogo and Leme locations.",
     foto4: "The experience",
-    fotosNota: "Current site photos. To highlight each location visually, replace or complement this gallery with specific photos from Botafogo and Leme.",
     unidadesEyebrow: "— Close to You —",
     unidadesTitle: "Two neighborhoods.<br><em>One identity.</em>",
     segSexta: "Monday to Friday",
@@ -145,10 +135,6 @@ const translations = {
     feriados: "Holidays",
     comoChegar: "Get directions ↗",
     agendarBotafogo: "Book Botafogo",
-    horariosLeme: "Hours",
-    consulteLeme: "Check upon booking",
-    servicosLeme: "Services",
-    mesmosValoresLeme: "Same prices",
     agendarLeme: "Book Leme",
     bookingEyebrow: "— Your Next Cut Starts Here —",
     bookingTitle: "Where are we<br><em>meeting you?</em>",
@@ -191,13 +177,9 @@ const translations = {
     femDesc: "Estilo, cuidado y corte a medida.",
     verMaisServicios: "Reserva tu servicio →",
     fotosEyebrow: "— Por Dentro de Neighborhood —",
-    fotosTitle: "Nuestro <em>espacio</em>",
-    fotosSub: "Ambiente, equipo y cuidado en cada detalle.",
-    foto1: "Atención",
-    foto2: "Precisión en el detalle",
-    foto3: "Nuestro equipo",
+    fotosTitle: "Nuestros <em>espacios</em>",
+    fotosSub: "Ambiente, equipo y cuidado en cada detalle en las sucursales de Botafogo y Leme.",
     foto4: "La experiencia",
-    fotosNota: "Fotos actuales del sitio. Para destacar visualmente cada sucursal, reemplaza o complementa esta galería con fotos específicas de Botafogo y Leme.",
     unidadesEyebrow: "— Cerca de Ti —",
     unidadesTitle: "Dos vecindarios.<br><em>Una identidad.</em>",
     segSexta: "Lunes a viernes",
@@ -205,10 +187,6 @@ const translations = {
     feriados: "Feriados",
     comoChegar: "Cómo llegar ↗",
     agendarBotafogo: "Reservar Botafogo",
-    horariosLeme: "Horarios",
-    consulteLeme: "Consultar al reservar",
-    servicosLeme: "Servicios",
-    mesmosValoresLeme: "Mismos precios",
     agendarLeme: "Reservar Leme",
     bookingEyebrow: "— Tu Próximo Corte Empieza Aquí —",
     bookingTitle: "Dónde vamos<br><em>a encontrarte?</em>",
@@ -220,28 +198,6 @@ const translations = {
     footerLinkAgendar: "Reserva online",
     direitos: "Todos los derechos reservados."
   }
-    pt: {
-    // ...
-    fotosEyebrow: "— Por Dentro da Neighborhood —",
-    fotosTitle: "Nossos <em>espaços</em>",
-    fotosSub: "Ambiente, equipe e cuidado em cada detalhe nas unidades Botafogo e Leme.",
-    // ...
-  },
-  en: {
-    // ...
-    fotosEyebrow: "— Inside Neighborhood —",
-    fotosTitle: "Our <em>spaces</em>",
-    fotosSub: "Atmosphere, team, and care in every detail at Botafogo and Leme locations.",
-    // ...
-  },
-  es: {
-    // ...
-    fotosEyebrow: "— Por Dentro de Neighborhood —",
-    fotosTitle: "Nuestros <em>espacios</em>",
-    fotosSub: "Ambiente, equipo y cuidado en cada detalle en las sucursales de Botafogo y Leme.",
-    // ...
-  }
-
 };
 
 function changeLanguage(lang) {
