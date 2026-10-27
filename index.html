@@ -25,20 +25,20 @@
     <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
     
     <nav id="mainNav" class="nav-menu">
-      <a href="#inicio">Início</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#fotos">Fotos</a>
-      <a href="#unidades">Unidades</a>
-      <a href="#avaliacoes">Avaliações</a>
+      <a href="#inicio" data-i18n="navInicio">Início</a>
+      <a href="#servicos" data-i18n="navServicos">Serviços</a>
+      <a href="#fotos" data-i18n="navFotos">Fotos</a>
+      <a href="#unidades" data-i18n="navUnidades">Unidades</a>
+      <a href="#avaliacoes" data-i18n="navAvaliacoes">Avaliações</a>
       
       <!-- Seletor de Idiomas com Bandeiras -->
       <div class="lang-selector">
-        <a href="#pt" class="lang-btn active" title="Português">🇧🇷</a>
-        <a href="#en" class="lang-btn" title="English">🇺🇸</a>
-        <a href="#es" class="lang-btn" title="Español">🇪🇸</a>
+        <a href="#" class="lang-btn active" data-lang="pt" title="Português">🇧🇷</a>
+        <a href="#" class="lang-btn" data-lang="en" title="English">🇺🇸</a>
+        <a href="#" class="lang-btn" data-lang="es" title="Español">🇪🇸</a>
       </div>
 
-      <a class="nav-book" href="#agendar">Agendar</a>
+      <a class="nav-book" href="#agendar" data-i18n="navAgendar">Agendar</a>
     </nav>
   </header>
 
@@ -47,13 +47,13 @@
     <section class="hero" id="inicio">
       <div class="hero-shade"></div>
       <div class="hero-content">
-        <p class="eyebrow">— Tailor Made Barber Shop —</p>
-        <h1>Seu estilo.<br><em>Sua vizinhança.</em></h1>
-        <p class="hero-copy">Um espaço feito para cuidar do visual, trocar ideia e se sentir em casa.</p>
-        <p class="motto">Haircuts and Shaves • Cultura não se corta, se compartilha.</p>
+        <p class="eyebrow" data-i18n="heroEyebrow">— Tailor Made Barber Shop —</p>
+        <h1 data-i18n="heroTitle">Seu estilo.<br><em>Sua vizinhança.</em></h1>
+        <p class="hero-copy" data-i18n="heroCopy">Um espaço feito para cuidar do visual, trocar ideia e se sentir em casa.</p>
+        <p class="motto" data-i18n="heroMotto">Haircuts and Shaves • Cultura não se corta, se compartilha.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#agendar">Escolha sua unidade e agende</a>
-          <a class="button button-outline" href="https://www.instagram.com/neighborhood.barbershop/" target="_blank" rel="noopener">Siga no Instagram ↗</a>
+          <a class="button button-primary" href="#agendar" data-i18n="btnAgendarHero">Escolha sua unidade e agende</a>
+          <a class="button button-outline" href="https://www.instagram.com/neighborhood.barbershop/" target="_blank" rel="noopener" data-i18n="btnInsta">Siga no Instagram ↗</a>
         </div>
       </div>
       <div class="hero-mark">N<span>.</span></div>
@@ -62,98 +62,98 @@
     <!-- SERVIÇOS -->
     <section class="section services" id="servicos">
       <div class="section-heading">
-        <p class="eyebrow">— Cuidado no Detalhe —</p>
-        <h2>Escolha seu <em>estilo</em></h2>
-        <p>Os mesmos serviços e valores nas duas unidades.</p>
+        <p class="eyebrow" data-i18n="servicosEyebrow">— Cuidado no Detalhe —</p>
+        <h2 data-i18n="servicosTitle">Escolha seu <em>estilo</em></h2>
+        <p data-i18n="servicosSub">Os mesmos serviços e valores nas duas unidades.</p>
       </div>
       <div class="service-grid">
         <article class="service-card">
           <div class="service-top">
-            <h3>Corte</h3>
+            <h3 data-i18n="corteTitulo">Corte</h3>
             <span class="price">R$ 65</span>
           </div>
-          <p>Do clássico ao atual, com acabamento impecável.</p>
+          <p data-i18n="corteDesc">Do clássico ao atual, com acabamento impecável.</p>
         </article>
 
         <article class="service-card">
           <div class="service-top">
-            <h3>Barba</h3>
+            <h3 data-i18n="barbaTitulo">Barba</h3>
             <span class="price">R$ 50</span>
           </div>
-          <p>Modelagem e alinhamento para valorizar seu estilo.</p>
+          <p data-i18n="barbaDesc">Modelagem e alinhamento para valorizar seu estilo.</p>
         </article>
 
         <article class="service-card featured">
-          <div class="popular">MAIS PEDIDO</div>
+          <div class="popular" data-i18n="comboBadge">MAIS PEDIDO</div>
           <div class="service-top">
-            <h3>Combo Neighborhood</h3>
+            <h3 data-i18n="comboTitulo">Combo Neighborhood</h3>
             <span class="price">R$ 110</span>
           </div>
-          <p>Corte + barba. A experiência completa.</p>
+          <p data-i18n="comboDesc">Corte + barba. A experiência completa.</p>
         </article>
 
         <article class="service-card">
           <div class="service-top">
-            <h3>Acabamento</h3>
+            <h3 data-i18n="acabamentoTitulo">Acabamento</h3>
             <span class="price">R$ 25</span>
           </div>
-          <p>Pezinho, contorno e detalhes que fazem a diferença.</p>
+          <p data-i18n="acabamentoDesc">Pezinho, contorno e detalhes que fazem a diferença.</p>
         </article>
 
         <article class="service-card">
           <div class="service-top">
-            <h3>Sobrancelha</h3>
+            <h3 data-i18n="sobrancelhaTitulo">Sobrancelha</h3>
             <span class="price">R$ 20</span>
           </div>
-          <p>Alinhamento para complementar o visual.</p>
+          <p data-i18n="sobrancelhaDesc">Alinhamento para complementar o visual.</p>
         </article>
 
         <article class="service-card">
           <div class="service-top">
-            <h3>Corte feminino</h3>
+            <h3 data-i18n="femTitulo">Corte feminino</h3>
             <span class="price">R$ 90</span>
           </div>
-          <p>Estilo, cuidado e corte sob medida.</p>
+          <p data-i18n="femDesc">Estilo, cuidado e corte sob medida.</p>
         </article>
       </div>
       <div class="center-action">
-        <a class="text-link" href="#agendar">Agende seu serviço →</a>
+        <a class="text-link" href="#agendar" data-i18n="verMaisServicios">Agende seu serviço →</a>
       </div>
     </section>
 
     <!-- GALERIA DE FOTOS -->
     <section class="section gallery-section" id="fotos">
       <div class="section-heading">
-        <p class="eyebrow">— Por Dentro da Neighborhood —</p>
-        <h2>Nosso <em>espaço</em></h2>
-        <p>Ambiente, equipe e cuidado em cada detalhe.</p>
+        <p class="eyebrow" data-i18n="fotosEyebrow">— Por Dentro da Neighborhood —</p>
+        <h2 data-i18n="fotosTitle">Nosso <em>espaço</em></h2>
+        <p data-i18n="fotosSub">Ambiente, equipe e cuidado em cada detalhe.</p>
       </div>
       <div class="gallery-grid">
         <figure class="gallery-item gallery-large">
           <img src="https://neighborhoodbarbershop.github.io/neighborhood-site/20260716_181132.jpg" alt="Atendimento e ambiente da Neighborhood Barbershop" loading="lazy">
-          <figcaption>Atendimento</figcaption>
+          <figcaption data-i18n="foto1">Atendimento</figcaption>
         </figure>
         <figure class="gallery-item">
           <img src="https://neighborhoodbarbershop.github.io/neighborhood-site/20260724_140115.jpg" alt="Barbeiro realizando um atendimento" loading="lazy">
-          <figcaption>Precisão no detalhe</figcaption>
+          <figcaption data-i18n="foto2">Precisão no detalhe</figcaption>
         </figure>
         <figure class="gallery-item">
           <img src="https://neighborhoodbarbershop.github.io/neighborhood-site/20260903_183601.jpg" alt="Equipe em atendimento na barbearia" loading="lazy">
-          <figcaption>Nosso time</figcaption>
+          <figcaption data-i18n="foto3">Nosso time</figcaption>
         </figure>
         <figure class="gallery-item">
           <img src="https://neighborhoodbarbershop.github.io/neighborhood-site/20260904_124037.jpg" alt="Experiência de cuidado na cadeira" loading="lazy">
-          <figcaption>A experiência</figcaption>
+          <figcaption data-i18n="foto4">A experiência</figcaption>
         </figure>
       </div>
-      <p class="gallery-note">Fotos atuais do site. Para destacar visualmente cada unidade, substitua ou complemente esta galeria com as fotos específicas de Botafogo e do Leme.</p>
+      <p class="gallery-note" data-i18n="fotosNota">Fotos atuais do site. Para destacar visualmente cada unidade, substitua ou complemente esta galeria com as fotos específicas de Botafogo e do Leme.</p>
     </section>
 
     <!-- UNIDADES -->
     <section class="section units-section" id="unidades">
       <div class="section-heading">
-        <p class="eyebrow">— Pertinho de Você —</p>
-        <h2>Duas vizinhanças.<br><em>Uma identidade.</em></h2>
+        <p class="eyebrow" data-i18n="unidadesEyebrow">— Pertinho de Você —</p>
+        <h2 data-i18n="unidadesTitle">Duas vizinhanças.<br><em>Uma identidade.</em></h2>
       </div>
       <div class="unit-grid">
         <article class="unit-card">
@@ -161,13 +161,13 @@
           <h3>Neighborhood Botafogo</h3>
           <p class="address">Rua Lauro Müller, 16 — Loja K<br>Botafogo, Rio de Janeiro</p>
           <div class="hours">
-            <span>Segunda a sexta</span><strong>09h às 22h</strong>
-            <span>Sábado</span><strong>10h às 20h</strong>
-            <span>Feriados</span><strong>10h às 18h</strong>
+            <span data-i18n="segSexta">Segunda a sexta</span><strong>09h às 22h</strong>
+            <span data-i18n="sabado">Sábado</span><strong>10h às 20h</strong>
+            <span data-i18n="feriados">Feriados</span><strong>10h às 18h</strong>
           </div>
           <div class="unit-actions">
-            <a class="button button-outline" href="https://www.google.com/maps/search/?api=1&query=Rua+Lauro+Muller+16+Loja+K+Botafogo+Rio+de+Janeiro" target="_blank" rel="noopener">Como chegar ↗</a>
-            <a class="button button-primary booking-link" data-unit="botafogo" href="https://www.trinks.com/neighborhoodbarbershop" target="_blank" rel="noopener">Agendar Botafogo</a>
+            <a class="button button-outline" href="https://www.google.com/maps/search/?api=1&query=Rua+Lauro+Muller+16+Loja+K+Botafogo+Rio+de+Janeiro" target="_blank" rel="noopener" data-i18n="comoChegar">Como chegar ↗</a>
+            <a class="button button-primary booking-link" data-unit="botafogo" href="https://www.trinks.com/neighborhoodbarbershop" target="_blank" rel="noopener" data-i18n="agendarBotafogo">Agendar Botafogo</a>
           </div>
         </article>
 
@@ -176,12 +176,12 @@
           <h3>Neighborhood Leme</h3>
           <p class="address">Rua Gustavo Sampaio, 323<br>Leme, Rio de Janeiro</p>
           <div class="hours">
-            <span>Horários</span><strong>Consulte no agendamento</strong>
-            <span>Serviços</span><strong>Mesmos valores</strong>
+            <span data-i18n="horariosLeme">Horários</span><strong data-i18n="consulteLeme">Consulte no agendamento</strong>
+            <span data-i18n="servicosLeme">Serviços</span><strong data-i18n="mesmosValoresLeme">Mesmos valores</strong>
           </div>
           <div class="unit-actions">
-            <a class="button button-outline" href="https://www.google.com/maps/search/?api=1&query=Rua+Gustavo+Sampaio+323+Leme+Rio+de+Janeiro" target="_blank" rel="noopener">Como chegar ↗</a>
-            <a class="button button-primary booking-link" data-unit="leme" href="https://www.trinks.com/neighborhood-barbershop-leme" target="_blank" rel="noopener">Agendar Leme</a>
+            <a class="button button-outline" href="https://www.google.com/maps/search/?api=1&query=Rua+Gustavo+Sampaio+323+Leme+Rio+de+Janeiro" target="_blank" rel="noopener" data-i18n="comoChegar">Como chegar ↗</a>
+            <a class="button button-primary booking-link" data-unit="leme" href="https://www.trinks.com/neighborhood-barbershop-leme" target="_blank" rel="noopener" data-i18n="agendarLeme">Agendar Leme</a>
           </div>
         </article>
       </div>
@@ -190,9 +190,9 @@
     <!-- AGENDAMENTO -->
     <section class="section booking-section" id="agendar">
       <div class="booking-panel">
-        <p class="eyebrow">— Seu Próximo Corte Começa Aqui —</p>
-        <h2>Onde vamos<br><em>te encontrar?</em></h2>
-        <p>Escolha a unidade para continuar seu agendamento online pelo Trinks.</p>
+        <p class="eyebrow" data-i18n="bookingEyebrow">— Seu Próximo Corte Começa Aqui —</p>
+        <h2 data-i18n="bookingTitle">Onde vamos<br><em>te encontrar?</em></h2>
+        <p data-i18n="bookingSub">Escolha a unidade para continuar seu agendamento online pelo Trinks.</p>
         <div class="booking-options">
           <a class="booking-option booking-link" data-unit="botafogo" href="https://www.trinks.com/neighborhoodbarbershop" target="_blank" rel="noopener">
             <span class="option-number">01</span>
@@ -205,15 +205,15 @@
             <b>→</b>
           </a>
         </div>
-        <p class="booking-note">O agendamento abre em uma nova página do Trinks.</p>
+        <p class="booking-note" data-i18n="bookingNote">O agendamento abre em uma nova página do Trinks.</p>
       </div>
     </section>
 
     <!-- AVALIAÇÕES -->
     <section class="section reviews-section" id="avaliacoes">
       <div class="section-heading">
-        <p class="eyebrow">— Quem é da Vizinhança Sabe —</p>
-        <h2>O que diz a <em>vizinhança</em></h2>
+        <p class="eyebrow" data-i18n="avaliacoesEyebrow">— Quem é da Vizinhança Sabe —</p>
+        <h2 data-i18n="avaliacoesTitle">O que diz a <em>vizinhança</em></h2>
         <p class="rating">★★★★★ <strong>4,9/5,0</strong> no Google Reviews</p>
       </div>
       <div class="review-grid">
@@ -227,13 +227,13 @@
   <!-- FOOTER -->
   <footer class="site-footer">
     <a class="brand" href="#inicio">NEIGHBORHOOD <span>TAILOR MADE BARBER SHOP • R.J. 21</span></a>
-    <p class="footer-motto">“Cultura não se corta, se compartilha.”</p>
+    <p class="footer-motto" data-i18n="footerMotto">“Cultura não se corta, se compartilha.”</p>
     <div class="footer-links">
       <a href="https://www.instagram.com/neighborhood.barbershop/" target="_blank" rel="noopener">Instagram</a>
-      <a href="#unidades">Unidades</a>
-      <a href="#agendar">Agendamento online</a>
+      <a href="#unidades" data-i18n="navUnidades">Unidades</a>
+      <a href="#agendar" data-i18n="footerLinkAgendar">Agendamento online</a>
     </div>
-    <small>© <span id="year"></span> Neighborhood Barbershop. Todos os direitos reservados.</small>
+    <small>© <span id="year"></span> Neighborhood Barbershop. <span data-i18n="direitos">Todos os direitos reservados.</span></small>
   </footer>
 
   <script src="script.js"></script>
