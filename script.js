@@ -220,6 +220,28 @@ const translations = {
     footerLinkAgendar: "Reserva online",
     direitos: "Todos los derechos reservados."
   }
+    pt: {
+    // ...
+    fotosEyebrow: "— Por Dentro da Neighborhood —",
+    fotosTitle: "Nossos <em>espaços</em>",
+    fotosSub: "Ambiente, equipe e cuidado em cada detalhe nas unidades Botafogo e Leme.",
+    // ...
+  },
+  en: {
+    // ...
+    fotosEyebrow: "— Inside Neighborhood —",
+    fotosTitle: "Our <em>spaces</em>",
+    fotosSub: "Atmosphere, team, and care in every detail at Botafogo and Leme locations.",
+    // ...
+  },
+  es: {
+    // ...
+    fotosEyebrow: "— Por Dentro de Neighborhood —",
+    fotosTitle: "Nuestros <em>espacios</em>",
+    fotosSub: "Ambiente, equipo y cuidado en cada detalle en las sucursales de Botafogo y Leme.",
+    // ...
+  }
+
 };
 
 function changeLanguage(lang) {
